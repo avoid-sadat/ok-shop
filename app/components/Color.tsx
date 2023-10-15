@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import { GrAdd } from "react-icons/gr";
 import { SketchPicker } from 'react-color';

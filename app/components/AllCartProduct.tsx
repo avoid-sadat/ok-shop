@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import prisma from "@/app/prismadb"
 import Link from 'next/link'
