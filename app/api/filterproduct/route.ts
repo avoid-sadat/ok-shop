@@ -5,8 +5,8 @@ export const dynamic = 'auto'
 
 export async function GET(request: Request) {
   try {
-    // const searchParams = new URLSearchParams(request.credentials);
-    const searchParams = new URLSearchParams(request.url.split("?")[1]);
+    const searchParams = new URLSearchParams(request.credentials);
+    //const searchParams = new URLSearchParams(request.url.split("?")[2]);
 
     const categories = searchParams.getAll("categories[]");
     const colors = searchParams.getAll("colors[]");

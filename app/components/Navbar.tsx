@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
         }
         return(
             <ul>
-                <li onClick={()=>signIn()} className='whitespace-nowrap hover:bg-gray-100 hover:text-neutral-900 px-5 py-2 cursor-pointer'>SignIn</li>
+                <li onClick={(e:any)=>{e.preventDefault();signIn()}} className='whitespace-nowrap hover:bg-gray-100 hover:text-neutral-900 px-5 py-2 cursor-pointer'>SignIn</li>
             </ul>
         )
     }

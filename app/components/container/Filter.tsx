@@ -101,7 +101,8 @@ const Filter = (props: Props) => {
                 colors: selectedHexValues
             },
             headers:{
-                'Content-Type':'application/json'
+                // 'Content-Type':'application/json'
+                'Accept': 'application/json'
             }
         })
         .then((response) => {

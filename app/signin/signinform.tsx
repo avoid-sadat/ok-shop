@@ -15,6 +15,7 @@ const Signinform = (props: Props) => {
 
     const Login = () => {
         try{
+            
             signIn('credentials', {
                 email:user.email,
                 password:user.password,
@@ -47,7 +48,8 @@ const Signinform = (props: Props) => {
             placeholder='password'
             onChange={(e) => setUser({...user, password: e.target.value})}
              />
-             <button onClick={Login} className='p-2 border bg-purple-600 text-white border-gray-300 mt-2 mb-4 focus:outline-none focus:border-gray-600'>
+             <button onClick={(e:any)=>{e.preventDefault();
+             Login()}} className='p-2 border bg-purple-600 text-white border-gray-300 mt-2 mb-4 focus:outline-none focus:border-gray-600'>
                 Login Now
              </button>
              <Link href='/signup' className='text-sm text-center mt-5 text-neutral-600'>Do not have an account</Link>
